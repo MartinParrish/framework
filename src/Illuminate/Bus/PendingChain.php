@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Foundation\Bus;
+namespace Illuminate\Bus;
 
 class PendingChain
 {
@@ -34,7 +34,7 @@ class PendingChain
     /**
      * Dispatch the job with the given arguments.
      *
-     * @return \Illuminate\Foundation\Bus\PendingDispatch
+     * @return \Illuminate\Bus\PendingDispatch
      */
     public function dispatch()
     {

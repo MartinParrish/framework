@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Foundation\Bus;
+namespace Illuminate\Bus;
 
 use Illuminate\Contracts\Bus\Dispatcher;
 
@@ -9,7 +9,7 @@ trait Dispatchable
     /**
      * Dispatch the job with the given arguments.
      *
-     * @return \Illuminate\Foundation\Bus\PendingDispatch
+     * @return \Illuminate\Bus\PendingDispatch
      */
     public static function dispatch()
     {
@@ -30,7 +30,7 @@ trait Dispatchable
      * Set the jobs that should run if this job is successful.
      *
      * @param  array  $chain
-     * @return \Illuminate\Foundation\Bus\PendingChain
+     * @return \Illuminate\Bus\PendingChain
      */
     public static function withChain($chain)
     {

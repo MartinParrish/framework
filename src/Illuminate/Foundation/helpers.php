@@ -10,7 +10,7 @@ use Illuminate\Queue\SerializableClosure;
 use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Contracts\Routing\UrlGenerator;
-use Illuminate\Foundation\Bus\PendingDispatch;
+use Illuminate\Bus\PendingDispatch;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Routing\ResponseFactory;
@@ -388,7 +388,7 @@ if (! function_exists('dispatch')) {
      * Dispatch a job to its appropriate handler.
      *
      * @param  mixed  $job
-     * @return \Illuminate\Foundation\Bus\PendingDispatch
+     * @return \Illuminate\Bus\PendingDispatch
      */
     function dispatch($job)
     {

@@ -5,7 +5,7 @@ namespace Illuminate\Queue;
 use ReflectionFunction;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Bus\Dispatchable;
 use Illuminate\Contracts\Container\Container;
 
 class CallQueuedClosure implements ShouldQueue
